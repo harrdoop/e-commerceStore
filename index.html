@@ -1,0 +1,2429 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="canonical" href="https://shopify/">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#eeeeee">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="author" content="Debutify">
+
+  <!-- Fav icon ================================================== -->
+  
+
+  <!-- Title and description ================================================== -->
+  <title>
+    sunized
+  </title>
+
+  
+
+  <!-- Social meta ================================================== -->
+  <!-- /snippets/social-meta-tags.liquid -->
+
+
+
+
+<meta property="og:site_name" content="sunized">
+<meta property="og:url" content="https://shopify/">
+<meta property="og:title" content="sunized">
+<meta property="og:type" content="website">
+<meta property="og:description" content="sunized">
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="sunized">
+<meta name="twitter:description" content="sunized">
+
+
+  <!-- CSS ================================================== -->
+  <link href="//cdn.shopify.com/s/files/1/0422/9840/9124/t/3/assets/theme.scss.css?v=7453559711446408288" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- Vendors ================================================== -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+  <!-- Sections ================================================== -->
+  <script>
+    window.theme = window.theme || {};
+    theme.strings = {
+      zoomClose: "Close (Esc)",
+      zoomPrev: "Previous (Left arrow key)",
+      zoomNext: "Next (Right arrow key)",
+      moneyFormat: "${{amount}}",
+      addressError: "Error looking up that address",
+      addressNoResults: "No results for that address",
+      addressQueryLimit: "You have exceeded the Google API usage limit. Consider upgrading to a \u003ca href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"\u003ePremium Plan\u003c\/a\u003e.",
+      authError: "There was a problem authenticating your Google Maps account.",
+      cartCookie: "Enable cookies to use the shopifyping cart"
+    };
+    theme.settings = {
+      cartType: "drawer",
+      gridType: null
+    };
+  </script>
+
+  <script src="//cdn.shopify.com/s/files/1/0422/9840/9124/t/3/assets/jquery-2.2.3.min.js?v=5821186314690718683" type="text/javascript"></script>
+  
+  <script id="currencyDetector">
+    function setCurrency(){
+      if (localStorage.currencySet) {} else {
+        $.getJSON('https://ipapi.co/json/', function(data) {
+          var json = JSON.stringify(data, null, 2);
+          var obj = JSON.parse(json);
+          var currency = obj.currency;
+          var defaultCurrency = "USD";
+          var currencySelector = $(".currency-selector");
+          var currentCurrency = currencySelector.val();
+          var currencyForm = $(".currency-form");
+          
+          if (currency == currentCurrency) {} else {if (currency == 'ALL'){
+                currencySelector.val('ALL').trigger('change');
+              }else if (currency == 'CAD'){
+                currencySelector.val('CAD').trigger('change');
+              }else if (currency == 'CNY'){
+                currencySelector.val('CNY').trigger('change');
+              }else if (currency == 'EUR'){
+                currencySelector.val('EUR').trigger('change');
+              }else if (currency == 'GBP'){
+                currencySelector.val('GBP').trigger('change');
+              }else if (currency == 'INR'){
+                currencySelector.val('INR').trigger('change');
+              }else{
+                currencySelector.val(defaultCurrency).trigger('change');
+              }}
+        });
+      }
+    }
+    setCurrency();
+  </script>
+  
+  <script src="//cdn.shopify.com/s/files/1/0422/9840/9124/t/3/assets/lazysizes.min.js?v=15522312340271661705" async="async"></script>
+
+  <script src="//cdn.shopify.com/s/files/1/0422/9840/9124/t/3/assets/theme.js?v=6089386251822924157" defer="defer"></script>
+
+  <!-- Header hook for plugins ================================================== -->
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/42298409124/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="0b3887414345e48f511c80faa9c25516">
+<meta id="in-context-paypal-metadata" data-shopify-id="42298409124" data-venmo-supported="true" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script id="apple-pay-shopify-capabilities" type="application/json">{"shopifyId":42298409124,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/shopify\/42298409124","merchantName":"sunized","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"sunized","amount":"1.00"}}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"0b3887414345e48f511c80faa9c25516","betas":["rich-media-storefront-analytics"],"domain":"shopify","predictiveSearch":true,"shopifyId":42298409124,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
+<script>var shopify = shopify || {};
+shopify.shopify = "sunized.myshopify.com";
+shopify.locale = "en";
+shopify.currency = {"active":"USD","rate":"1.0"};
+shopify.theme = {"name":"Debutify 2.0.2","id":103767638180,"theme_store_id":null,"role":"main"};
+shopify.theme.handle = "null";
+shopify.theme.style = {"id":null,"handle":null};
+shopify.cdnHost = "cdn.shopify.com";</script>
+<script type="module">!function(o){(o.shopify=o.shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.shopify=o.shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>window.shopifyPay = window.shopifyPay || {};
+window.shopifyPay.apiHost = "pay.shopify.com";</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["https:\/\/cdn.judge.me\/assets\/installed.js?shopify=sunized.myshopify.com","https:\/\/s3.amazonaws.com\/lastsecondcoupon\/js\/freeshippingbar.js?shopify=sunized.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":42298409124,"offset":-14400,"reqid":"2b7d6764-7b08-45ca-90cf-c4acd4084b75","pageurl":"shopify\/","u":"e15fcab15c83","p":"home"};</script>
+<script>window.shopifyPaypalV4VisibilityTracking = true;</script>
+<script>window.shopifyAnalytics = window.shopifyAnalytics || {};
+window.shopifyAnalytics.meta = window.shopifyAnalytics.meta || {};
+window.shopifyAnalytics.meta.currency = 'USD';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.shopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.shopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(function () {
+  var customDocumentWrite = function(content) {
+    var jquery = null;
+
+    if (window.jQuery) {
+      jquery = window.jQuery;
+    } else if (window.Checkout && window.Checkout.$) {
+      jquery = window.Checkout.$;
+    }
+
+    if (jquery) {
+      jquery('body').append(content);
+    }
+  };
+
+  var isDuplicatedThankYouPageView = function() {
+    return document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1;
+  }
+
+  var setCookieIfThankYouPage = function() {
+    if (window.location.pathname.indexOf('/checkouts') !== -1 &&
+        window.location.pathname.indexOf('/thank_you') !== -1) {
+
+      var twoMonthsFromNow = new Date(Date.now());
+      twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+      document.cookie = 'loggedConversion=' + window.location.pathname + '; expires=' + twoMonthsFromNow;
+    }
+  }
+
+  var trekkie = window.shopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+  if (trekkie.integrations) {
+    return;
+  }
+  trekkie.methods = [
+    'identify',
+    'page',
+    'ready',
+    'track',
+    'trackForm',
+    'trackLink'
+  ];
+  trekkie.factory = function(method) {
+    return function() {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift(method);
+      trekkie.push(args);
+      return trekkie;
+    };
+  };
+  for (var i = 0; i < trekkie.methods.length; i++) {
+    var key = trekkie.methods[i];
+    trekkie[key] = trekkie.factory(key);
+  }
+  trekkie.load = function(config) {
+    trekkie.config = config;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.onerror = function(e) {
+      (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+    };
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2020.07.13.1';
+    var first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+  };
+  trekkie.load(
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopifyId":42298409124,"isMerchantRequest":null,"themeId":103767638180,"themeCityHash":"6980976715325853278","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":false},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Facebook Pixel":{"pixelIds":["277881200189676"],"agent":"plshopify1.2"},"Session Attribution":{}}
+  );
+
+  var loaded = false;
+  trekkie.ready(function() {
+    if (loaded) return;
+    loaded = true;
+
+    window.shopifyAnalytics.lib = window.trekkie;
+    
+
+    var originalDocumentWrite = document.write;
+    document.write = customDocumentWrite;
+    try { window.shopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+    document.write = originalDocumentWrite;
+      (function () {
+        if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+          return;
+        }
+        window.BOOMR = window.BOOMR || {};
+        window.BOOMR.snippetStart = new Date().getTime();
+        window.BOOMR.snippetExecuted = true;
+        window.BOOMR.snippetVersion = 12;
+        window.BOOMR.application = "core";
+        window.BOOMR.shopifyId = 42298409124;
+        window.BOOMR.themeId = 103767638180;
+        window.BOOMR.url =
+          "https://cdn.shopify.com/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+        var where = document.currentScript || document.getElementsByTagName("script")[0];
+        var parentNode = where.parentNode;
+        var promoted = false;
+        var LOADER_TIMEOUT = 3000;
+        function promote() {
+          if (promoted) {
+            return;
+          }
+          var script = document.createElement("script");
+          script.id = "boomr-scr-as";
+          script.src = window.BOOMR.url;
+          script.async = true;
+          parentNode.appendChild(script);
+          promoted = true;
+        }
+        function iframeLoader(wasFallback) {
+          promoted = true;
+          var dom, bootstrap, iframe, iframeStyle;
+          var doc = document;
+          var win = window;
+          window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+          bootstrap = function(parent, scriptId) {
+            var script = doc.createElement("script");
+            script.id = scriptId || "boomr-if-as";
+            script.src = window.BOOMR.url;
+            BOOMR_lstart = new Date().getTime();
+            parent = parent || doc.body;
+            parent.appendChild(script);
+          };
+          if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+            window.BOOMR.snippetMethod = "s";
+            bootstrap(parentNode, "boomr-async");
+            return;
+          }
+          iframe = document.createElement("IFRAME");
+          iframe.src = "about:blank";
+          iframe.title = "";
+          iframe.role = "presentation";
+          iframe.loading = "eager";
+          iframeStyle = (iframe.frameElement || iframe).style;
+          iframeStyle.width = 0;
+          iframeStyle.height = 0;
+          iframeStyle.border = 0;
+          iframeStyle.display = "none";
+          parentNode.appendChild(iframe);
+          try {
+            win = iframe.contentWindow;
+            doc = win.document.open();
+          } catch (e) {
+            dom = document.domain;
+            iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+            win = iframe.contentWindow;
+            doc = win.document.open();
+          }
+          if (dom) {
+            doc._boomrl = function() {
+              this.domain = dom;
+              bootstrap();
+            };
+            doc.write("<body onload='document._boomrl();'>");
+          } else {
+            win._boomrl = function() {
+              bootstrap();
+            };
+            if (win.addEventListener) {
+              win.addEventListener("load", win._boomrl, false);
+            } else if (win.attachEvent) {
+              win.attachEvent("onload", win._boomrl);
+            }
+          }
+          doc.close();
+        }
+        var link = document.createElement("link");
+        if (link.relList &&
+          typeof link.relList.supports === "function" &&
+          link.relList.supports("preload") &&
+          ("as" in link)) {
+          window.BOOMR.snippetMethod = "p";
+          link.href = window.BOOMR.url;
+          link.rel = "preload";
+          link.as = "script";
+          link.addEventListener("load", promote);
+          link.addEventListener("error", function() {
+            iframeLoader(true);
+          });
+          setTimeout(function() {
+            if (!promoted) {
+              iframeLoader(true);
+            }
+          }, LOADER_TIMEOUT);
+          BOOMR_lstart = new Date().getTime();
+          parentNode.appendChild(link);
+        } else {
+          iframeLoader(false);
+        }
+        function boomerangSaveLoadTime(e) {
+          window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+        }
+        if (window.addEventListener) {
+          window.addEventListener("load", boomerangSaveLoadTime, false);
+        } else if (window.attachEvent) {
+          window.attachEvent("onload", boomerangSaveLoadTime);
+        }
+        if (document.addEventListener) {
+          document.addEventListener("onBoomerangLoaded", function(e) {
+            e.detail.BOOMR.init({
+              producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
+              ResourceTiming: {
+                enabled: true,
+                trackedResourceTypes: ["script", "img", "css"]
+              },
+            });
+            e.detail.BOOMR.t_end = new Date().getTime();
+          });
+        } else if (document.attachEvent) {
+          document.attachEvent("onpropertychange", function(e) {
+            if (!e) e=event;
+            if (e.propertyName === "onBoomerangLoaded") {
+              e.detail.BOOMR.init({
+                producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
+                ResourceTiming: {
+                  enabled: true,
+                  trackedResourceTypes: ["script", "img", "css"]
+                },
+              });
+              e.detail.BOOMR.t_end = new Date().getTime();
+            }
+          });
+        }
+      })();
+    
+
+    if (!isDuplicatedThankYouPageView()) {
+      setCookieIfThankYouPage();
+      
+        window.shopifyAnalytics.lib.page(
+          null,
+          {"pageType":"home"}
+        );
+      
+      
+    }
+  });
+
+  
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shopify_events_listener-2632023fb2795bd6668b6fbae05b661baba07afb3d62048f023763eca3cd96e3.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+})();</script>
+<script>var storefrontFormsRecaptchaCallback = function() {
+  grecaptcha.execute("6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9", { action: "contact_form" }).then(function(token) {
+    var forms = document.querySelectorAll('form[action^="/contact"]');
+
+    forms.forEach(function(form) {
+      var contact_form_flag = form.querySelector('input[name="form_type"][value="contact"]');
+
+      if(contact_form_flag === null) {
+        return;
+      }
+
+      var tokenInput = form.querySelector('input[name=recaptcha-v3-token]');
+      if (tokenInput instanceof HTMLElement) {
+        tokenInput.setAttribute("value", token);
+      }
+      else {
+        tokenInput = document.createElement("input");
+        tokenInput.setAttribute("name", "recaptcha-v3-token");
+        tokenInput.setAttribute("type", "hidden");
+        tokenInput.setAttribute("value", token);
+        form.appendChild(tokenInput, form);
+      }
+    });
+  });
+};</script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+  // Look for a contact form
+  var form = document.querySelector('form[action^="/contact"] input[name="form_type"][value="contact"]');
+  if (form === null) {
+    return;
+  }
+
+  // If found, inject reCAPTCHA V3
+  var recaptchaV3Script = document.createElement("script");
+  recaptchaV3Script.setAttribute("src", "https://www.recaptcha.net/recaptcha/api.js?onload=storefrontFormsRecaptchaCallback&render=6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9&hl=en");
+
+  document.body.appendChild(recaptchaV3Script);
+
+  return;
+});</script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+  // Look for reCAPTCHA disclaimer
+  var spam_detection_disclaimer = document.querySelector('p[data-spam-detection-disclaimer]');
+
+  if (spam_detection_disclaimer === null) {
+    return;
+  }
+
+  var styleElement = document.createElement("style");
+
+  document.head.appendChild(styleElement);
+
+  // If found, hide the banner
+  var styleSheet = styleElement.sheet;
+  styleSheet.insertRule(".grecaptcha-badge { visibility: hidden; }");
+});</script>
+<script integrity="sha256-BFmLd7EQOpIHg76CWl9MJFqROXNgxiHNdyBpz5k0cRM=" crossorigin="anonymous" data-source-attribution="shopify.loadfeatures" defer="defer" src="//cdn.shopify.com/s/assets/storefront/load_feature-04598b77b1103a920783be825a5f4c245a91397360c621cd772069cf99347113.js"></script>
+<script crossorigin="anonymous" defer="defer" src="//cdn.shopify.com/s/assets/shopify_pay/storefront-21b5dddfc8b64c1ad68cee3ba7448d1ffa15c24e969ebc1fbccf1a3784b659ad.js?v=20190107"></script>
+<script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="//cdn.shopify.com/s/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 240px;
+  }
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+	
+  
+  <script src="//cdn.shopify.com/s/files/1/0422/9840/9124/t/3/assets/modernizr.min.js?v=2139105474820643245" type="text/javascript"></script>
+
+  
+  
+  
+  
+<!-- Start of Judge.me Core -->
+<link rel="dns-prefetch" href="https://cdn.judge.me/">
+<script data-cfasync='false' class='jdgm-settings-script'>window.jdgmSettings={"pagination":5,"hide_badge_preview_if_no_reviews":true,"verified_badge_placement":"left-of-reviewer-name","all_reviews_include_out_of_store_products":true,"add_json_ld_snippet_on_all_reviews_page":true,"platform":"shopify","reply_name":"sunized","footer":true,"autopublish":true,"review_dates":true,"enable_custom_form":false};</script> <style class='jdgm-settings-style'>.jdgm-xx{left:0}.jdgm-prev-badge[data-average-rating='0.00']{display:none !important}.jdgm-author-all-initials{display:none !important}.jdgm-author-last-initial{display:none !important}.jdgm-rev__replier:before{content:'shopify'}.jdgm-rev__prod-link-prefix:before{content:'about'}.jdgm-rev__out-of-store-text:before{content:'(out of store)'}@media only screen and (min-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}@media only screen and (max-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}.jdgm-preview-badge[data-template="product"]{display:none !important}.jdgm-preview-badge[data-template="collection"]{display:none !important}.jdgm-preview-badge[data-template="index"]{display:none !important}.jdgm-review-widget[data-from-snippet="true"]{display:none !important}.jdgm-verified-count-badget[data-from-snippet="true"]{display:none !important}.jdgm-carousel-wrapper[data-from-snippet="true"]{display:none !important}.jdgm-all-reviews-text[data-from-snippet="true"]{display:none !important}
+</style>
+
+  
+  
+  
+  <style class='jdgm-miracle-styles'>
+  @-webkit-keyframes jdgm-spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes jdgm-spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}}@font-face{font-family:'JudgemeStar';src:url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAScAA0AAAAABrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAEgAAAABoAAAAcbyQ+3kdERUYAAARgAAAAHgAAACAAMwAGT1MvMgAAAZgAAABGAAAAVi+vS9xjbWFwAAAB8AAAAEAAAAFKwBMjvmdhc3AAAARYAAAACAAAAAj//wADZ2x5ZgAAAkAAAAEJAAABdH33LXtoZWFkAAABMAAAAC0AAAA2BroQKWhoZWEAAAFgAAAAHAAAACQD5QHQaG10eAAAAeAAAAAPAAAAFAYAAABsb2NhAAACMAAAAA4AAAAOAO4AeG1heHAAAAF8AAAAHAAAACAASgAvbmFtZQAAA0wAAADeAAABkorWfVZwb3N0AAAELAAAACkAAABEp3ubLXgBY2BkYADhPPP4OfH8Nl8ZuJkYQODS2fRrCPr/aSYGxq1ALgcDWBoAO60LkwAAAHgBY2BkYGDc+v80gx4TAwgASaAICmABAFB+Arl4AWNgZGBgYGPQYWBiAAIwyQgWc2AAAwAHVQB6eAFjYGRiYJzAwMrAwejDmMbAwOAOpb8ySDK0MDAwMbByMsCBAAMCBKS5pjA4PGB4wMR44P8BBj3GrQymQGFGkBwAjtgK/gAAeAFjYoAAEA1jAwAAZAAHAHgB3crBCcAwDEPRZydkih567CDdf4ZskmLwFBV8xBfCaC4BXkOUmx4sU0h2ngNb9V0vQCxaRKIAevT7fGWuBrEAAAAAAAAAAAA0AHgAugAAeAF9z79Kw1AUx/FzTm7un6QmJtwmQ5Bg1abgEGr/BAqlU6Gju+Cgg1MkQ/sA7Vj7BOnmO/gUvo2Lo14NqIO6/IazfD8HEODtmQCfoANwNsyp2/GJt3WKQrd1NLiYYWx2PBqOsmJMEOznPOTzfSCrhAtbbLdmeFLJV9eKd63WLrZcIcuaEVdssWCKM6pLCfTVOYbz/0pNSMSZKLIZpvh78sAUH6PlMrreTCabP9r+Z/puPZ2ur/RqpQHgh+MIegCnXeM4MRAPjYN//5tj4ZtTjkFqEdmeMShlEJ7tVAly2TAkx6R68Fl4E/aVvn8JqHFQ4JS1434gXKcuL31dDhzs3YbsEOAd/IU88gAAAHgBfY4xTgMxEEVfkk0AgRCioKFxQYd2ZRtpixxgRU2RfhU5q5VWseQ4JdfgAJyBlmNwAM7ABRhZQ0ORwp7nr+eZAa54YwYg9zm3ynPOeFRe8MCrciXOh/KSS76UV5L/iDmrLiS5AeU519wrL3jmSbkS5115yR2fyivJv9kx0ZMZ2RLZw27q87iNQi8EBo5FSPIMw3HqBboi5lKTGAGDp8FKXWP+t9TU01Lj5His1Ba6uM9dTEMwvrFmbf5GC/q2drW3ruXUhhsCiQOjznFlCzYhHUZp4xp76vsvQh89CQAAeAFjYGJABowM6IANLMrEyMTIzMjCXpyRWJBqZshWXJJYBKOMAFHFBucAAAAAAAAB//8AAngBY2BkYGDgA2IJBhBgAvKZGViBJAuYxwAABJsAOgAAeAFjYGBgZACCk535hiD60tn0azAaAEqpB6wAAA==") format("woff");font-weight:normal;font-style:normal}.jdgm-star{font-family:'JudgemeStar';display:inline !important;text-decoration:none !important;padding:0 4px 0 0 !important;margin:0 !important;font-weight:bold;opacity:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.jdgm-star:hover{opacity:1}.jdgm-star:last-of-type{padding:0 !important}.jdgm-star.jdgm--on:before{content:"\e000"}.jdgm-star.jdgm--off:before{content:"\e001"}.jdgm-star.jdgm--half:before{content:"\e002"}.jdgm-widget *{margin:0;line-height:1.4;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-overflow-scrolling:touch}.jdgm-hidden{display:none !important;visibility:hidden !important}.jdgm-temp-hidden{display:none}.jdgm-spinner{width:40px;height:40px;margin:auto;border-radius:50%;border-top:2px solid #eee;border-right:2px solid #eee;border-bottom:2px solid #eee;border-left:2px solid #ccc;-webkit-animation:jdgm-spin 0.8s infinite linear;animation:jdgm-spin 0.8s infinite linear}.jdgm-prev-badge{display:block !important}
+
+</style>
+
+
+  
+  
+   
+<script data-cfasync="false" type="text/javascript" async src="https://cdn.judge.me/shopify_v2.js"></script>
+<link rel="stylesheet" type="text/css" media="nope!" href="https://cdn.judge.me/shopify_v2.css"
+      onload="this.media='all',function(){var d=document,e=d.createEvent('Event');e.initEvent('jdgm.doneLoadingCss',!0,!0),d.dispatchEvent(e)}();">
+<noscript><link rel="stylesheet" type="text/css" media="all" href="https://cdn.judge.me/shopify_v2.css"></noscript>
+<!-- End of Judge.me Core -->
+
+
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM.png?height=628&pad_color=fff&v=1593545963&width=1200" />
+<meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM.png?height=628&pad_color=fff&v=1593545963&width=1200" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+</head>
+
+
+<body id="sunized"
+      class="
+             
+             sticky-header
+             
+             
+             template-index">
+
+  <div id="SearchDrawer" class="drawer drawer--top">
+    <div class="drawer__inner">
+    	<!-- /snippets/search-bar.liquid -->
+
+
+<form action="/search" method="get" class="input-group search-bar input-group-full" role="search">
+  
+  <input type="hidden" name="type" value="product">
+  
+  <input type="search" name="q" value="" placeholder="Search our store" class="search-input input-group-field" aria-label="Search our store">
+  <span class="input-group-btn">
+    <button type="submit" class="btn btn--primary">
+      <span class="fas fa-search" aria-hidden="true"></span>
+      <span class="sumbit-text">Search</span>
+    </button>
+  </span>
+</form>
+
+    </div>
+  </div>
+
+  <div id="shopify-section-drawer-menu" class="shopify-section drawer-menu-section"><div id="NavDrawer" class="drawer drawer--left drawer--has-fixed-header has-social-medias cart-spacer" data-section-id="drawer-menu" data-section-type="drawer-menu-section">
+    <div class="drawer__fixed-header">
+      <div class="drawer__header">
+        <div class="drawer__title">
+          <span class="fas fa-bars" aria-hidden="true"></span>
+          Menu
+        </div>
+        <div class="drawer__close">
+          <button type="button" class="btn btn-square-small icon-fallback-text drawer__close-button js-drawer-close">
+            <span class="fas fa-times" aria-hidden="true"></span>
+            <span class="fallback-text">Close Cart</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  <div class="drawer__inner drawer-left__inner">
+    <ul class="mobile-nav">
+      
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/"
+              class="mobile-nav__link"
+              >
+                Home
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/collections/women"
+              class="mobile-nav__link"
+              >
+                Women
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/collections/men"
+              class="mobile-nav__link"
+              >
+                Men
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/pages/faqs"
+              class="mobile-nav__link"
+              >
+                FAQs
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/pages/about-us"
+              class="mobile-nav__link"
+              >
+                About Us
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/pages/contact-us"
+              class="mobile-nav__link"
+              >
+                Contact Us
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/pages/track-your-order"
+              class="mobile-nav__link"
+              >
+                Track Your Order
+            </a>
+          </li>
+
+        
+      
+      
+      
+      
+      
+      
+        <li class="mobile-nav__spacer"></li>
+        
+      
+    </ul>
+    <!-- //mobile-nav -->
+  </div>
+  
+    
+  
+
+
+<div class="social-medias">
+  
+    <a class="social-medias-icon" target="_blank" href="https://www.facebook.com/Sunized-104647394646821" title="sunized on Facebook">
+      <span class="fab fa-facebook-f fa-fw" aria-hidden="true"></span>
+    </a>
+  
+  
+  
+  
+    <a class="social-medias-icon" target="_blank" href="https://www.instagram.com/sunized.shopify" title="sunized on Instagram">
+      <span class="fab fa-instagram fa-fw" aria-hidden="true"></span>
+    </a>
+  
+  
+  
+  
+  
+  
+</div>
+
+  
+</div>
+
+
+</div>
+
+  <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-header drawer--has-fixed-footer">
+    <div class="drawer__fixed-header">
+      <div class="drawer__header">
+        <div class="drawer__title">
+          <a href="/cart">
+            <span class="fas fa-shopifyping-cart" aria-hidden="true"></span>
+            Your cart
+          </a>
+        </div>
+        <div class="drawer__close">
+          <button type="button" class="btn btn-square-small icon-fallback-text drawer__close-button js-drawer-close">
+            <span class="fas fa-times" aria-hidden="true"></span>
+            <span class="fallback-text">Close Cart</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__inner">
+      <p class="ajaxcart-loading-icon fas fa-spinner fa-spin text-center"></p>
+      <div class="cart-empty-container text-center">
+        <p class="cart--empty-message">Your cart is currently empty.</p>
+        <a href="/collections/all" class="btn btn--primary  cart--continue-browsing">Continue browsing our collections</a>
+        <p class="cookie-message">Enable cookies to use the shopifyping cart</p>
+      </div>
+      <div id="CartContainer" class="drawer__cart"></div>
+    </div>
+  </div>
+
+  <div id="PageContainer" class="page-container">
+    
+    
+
+    <div id="shopify-section-header" class="shopify-section header-section"><div class="header-container
+            drawer__header-container
+            nav-center"
+     data-section-id="header" data-section-type="header-section" data-template="index">
+    
+      <!-- Header -->
+	  <header class="site-header" role="banner">
+		<div class="wrapper-fluid header-wrapper">
+          
+          <!-- left icons -->
+          <div class="nav-containers nav-container-left-icons">
+            <ul class="inner-nav-containers">
+              <li class="site-nav__item site-nav--open">
+                <a href="" class="site-nav__link site-nav__link--icon js-drawer-open-button-left" aria-controls="NavDrawer">
+                  <span class="icon-fallback-text">
+                    <span class="fas fa-bars fa-fw" aria-hidden="true"></span>
+                    <span class="fallback-text">Menu</span>
+                  </span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          <!-- Logo -->
+          <div class="nav-containers nav-container-logo">
+            <ul class="inner-nav-containers">
+              
+                
+                
+              
+				
+                	<h1 class="site-header__logo" itemscope itemtype="http://schema.org/Organization">
+              	
+                	<a href="/" itemprop="url" class="site-header__logo-link">
+               			
+                          	<img class="logo inverted-logo" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x70.png?v=1593545963"
+                            srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x70.png?v=1593545963 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x70@2x.png?v=1593545963 2x"
+                            alt="sunized"
+                            itemprop="logo">
+                        
+                    
+						
+                        	<img class="logo default-logo" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x70.png?v=1593545963"
+                        	srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x70.png?v=1593545963 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x70@2x.png?v=1593545963 2x"
+                       		alt="sunized"
+                   			itemprop="logo">
+                      
+                      		<img class="logo mobile-logo" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x50.png?v=1593545963"
+                        	srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x50.png?v=1593545963 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x50@2x.png?v=1593545963 2x"
+                       		alt="sunized"
+                   			itemprop="logo">
+                      	
+                	</a>
+				
+                	</h1>
+              	
+            
+            </ul>
+          </div>
+          
+          <!-- Navigation menu -->
+          <div id="AccessibleNav" class="site-nav nav-containers nav-container-menu">
+            <ul class="inner-nav-containers">         
+                
+                  
+                    <li class="site-nav__item site-nav--active">
+                      <a
+                        href="/"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          Home
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/collections/women"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          Women
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/collections/men"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          Men
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/pages/faqs"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          FAQs
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/pages/about-us"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          About Us
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/pages/contact-us"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          Contact Us
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/pages/track-your-order"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          Track Your Order
+                      </a>
+                    </li>
+                  
+                
+            </ul>
+          </div>
+            
+          <!-- right icons -->
+          <div class="nav-containers nav-container-right-icons">
+            <ul class="inner-nav-containers">
+              
+              
+              
+
+              
+              <li class="site-nav__item">
+                <a href="/search" class="site-nav__link site-nav__link--icon js-drawer-open-button-top" aria-controls="SearchDrawer">
+                  <span class="icon-fallback-text">
+                    <span class="fas fa-search fa-fw" aria-hidden="true"></span>
+                    <span class="fallback-text">Search</span>
+                  </span>
+                </a>
+              </li>
+              
+
+              <li class="site-nav__item">
+                <a href="/cart" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
+                  <span class="icon-fallback-text">
+                    <span class="fas fa-shopifyping-cart fa-fw" aria-hidden="true"></span>
+                    <span class="fallback-text">Cart</span>
+                  </span>
+                  <span class="cart-link__bubble animated infinite rubberBand  "></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </header>
+
+</div>
+
+</div>
+    
+    
+      
+    
+
+    <main class="main-content" role="main">
+      <div class="wrapper-full
+                  ">
+
+        <!-- /templates/index.liquid -->
+<div class="index-sections">
+  <!-- BEGIN content_for_index --><div id="shopify-section-1568145568761" class="shopify-section hero-section">
+
+  
+
+  <div id="section-1568145568761" data-section-id="1568145568761" data-section-type="hero-section">
+    
+    <style class="hero-header-style">
+  
+</style>
+
+    
+    <div id="Hero-1568145568761" class="hero-container hero-index hero-header"
+      >
+
+      <!-- Blocks -->
+      
+        <div class="hero hero-1568145586211
+                    hero--xlarge
+                    hero-mobile-xlarge
+                    overlay
+                    lazyload
+                    hero-parallax
+                    
+                    "
+             
+             data-bgset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_180x.jpg?v=1593546612 180w 120h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_360x.jpg?v=1593546612 360w 240h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_540x.jpg?v=1593546612 540w 360h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_720x.jpg?v=1593546612 720w 480h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_900x.jpg?v=1593546612 900w 600h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_1080x.jpg?v=1593546612 1080w 720h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_1296x.jpg?v=1593546612 1296w 864h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_1512x.jpg?v=1593546612 1512w 1008h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_1728x.jpg?v=1593546612 1728w 1153h,
+  //cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman.jpg?v=1593546612 4096w 2732h"
+             data-sizes="auto"
+             data-parent-fit="cover"
+             style="background-position: center center; background-image: url('//cdn.shopify.com/s/files/1/0422/9840/9124/files/retro-young-woman_medium.jpg?v=1593546612);"
+             
+             >
+
+          
+          <div class="hero__inner">
+            <div class="hero__text-wrapper text-center">
+              <div class="grid">
+                <div class="grid__item large--eight-twelfths push--large--two-twelfths one-whole hero-content">
+                  
+                    <h2 class="hero__title">Say Hello to Sunshine</h2>
+                  
+                  
+                    <div class="rte hero__text"><p>View our collection of the finest &amp; trendiest Sunglasses in the industry.</p></div>
+                  
+                  
+                    <a href="/collections/collection" class="btn  hero__btn">
+                      shopify Now <span class="fas fa-arrow-right" aria-hidden="true"></span>
+                    </a>
+                  
+                </div>
+              </div>
+             </div>
+          </div>
+
+          
+        </div>
+      
+    </div>
+  
+    <div class="slick-navigation">
+      <button class="slick-arrows slick-prev">
+        <span class="fas fa-arrow-left"></span>
+      </button>
+      <div class="slick-dots-container"></div>
+      <button class="slick-arrows slick-next">
+        <span class="fas fa-arrow-right"></span>
+      </button>
+    </div>
+
+  </div>
+
+
+</div><div id="shopify-section-1568302117992" class="shopify-section featured-products-section">
+
+  <div id="section-1568302117992" class=""  data-section-id="1568302117992" data-section-type="product-grid-section">
+      <div class="box">
+        <div class="wrapper">
+
+          
+            <div class="grid">
+              <div class="grid__item large--eight-twelfths push--large--two-twelfths">
+                <div class="section-header">
+                  
+                    <h2 class="section-header__title">Best Sellers</h2>
+                  
+                  
+                </div>
+               </div>
+            </div>
+          
+          
+          <div class="grid grid-uniform grid--spacer slick-format slick-product-grid slick-product-grid-1568302117992"
+               data-count="8"
+               data-slidetoshow="4"
+               data-slidetoshowmobile="2"
+               data-autoplay="true"
+               data-autoplayspeed="3000"
+               data-dots="true"
+               data-arrows="true">
+            
+            
+            
+            
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-oversize-retro-sunglasses" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17833143238820" class="product--wrapper image-wrapper">
+              <div style= "padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17833143238820"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/E0475169-E1ED-4ABC-9325-C9A99AE6C773_small.png?v=1593998379"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/E0475169-E1ED-4ABC-9325-C9A99AE6C773_{width}x.png?v=1593998379"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™ - Outsize"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/E0475169-E1ED-4ABC-9325-C9A99AE6C773_1024x.png?v=1593998379" alt="Sunized™ - Outsize">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-oversize-retro-sunglasses" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™ - Outsize</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $29
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-desire" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17860826595492" class="product--wrapper image-wrapper">
+              <div style="padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17860826595492"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/Hf686a2d7f87b444da071443e0bbac8ffM_small.jpg?v=1594010580"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/Hf686a2d7f87b444da071443e0bbac8ffM_{width}x.jpg?v=1594010580"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™  - Desire"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/Hf686a2d7f87b444da071443e0bbac8ffM_1024x.jpg?v=1594010580" alt="Sunized™  - Desire">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-desire" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™  - Desire</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $27
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-club-masters" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17834114678948" class="product--wrapper image-wrapper">
+              <div style="padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17834114678948"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/club_small.jpg?v=1593830008"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/club_{width}x.jpg?v=1593830008"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™ - Club Masters"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/club_1024x.jpg?v=1593830008" alt="Sunized™ - Club Masters">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-club-masters" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™ - Club Masters</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $26
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-aviator-pilot-sunglasses" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17811200082084" class="product--wrapper image-wrapper">
+              <div style="padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17811200082084"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/HTB1u4JyaQT2gK0jSZPcq6AKkpXas_small.jpg?v=1594080581"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/HTB1u4JyaQT2gK0jSZPcq6AKkpXas_{width}x.jpg?v=1594080581"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™ - Aviator"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/HTB1u4JyaQT2gK0jSZPcq6AKkpXas_1024x.jpg?v=1594080581" alt="Sunized™ - Aviator">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-aviator-pilot-sunglasses" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™ - Aviator</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $29
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-butterfly" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17861506826404" class="product--wrapper image-wrapper">
+              <div style="padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17861506826404"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/51B62F38-ACFB-4113-AF07-BD2DE5E9C86B_small.png?v=1594183320"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/51B62F38-ACFB-4113-AF07-BD2DE5E9C86B_{width}x.png?v=1594183320"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™ - Butterfly"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/51B62F38-ACFB-4113-AF07-BD2DE5E9C86B_1024x.png?v=1594183320" alt="Sunized™ - Butterfly">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-butterfly" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™ - Butterfly</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $30
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-round-sunglasses" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17781016297636" class="product--wrapper image-wrapper">
+              <div style="padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17781016297636"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/roundsgray_small.jpg?v=1593819008"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/roundsgray_{width}x.jpg?v=1593819008"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™ - Ring"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/roundsgray_1024x.jpg?v=1593819008" alt="Sunized™ - Ring">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-round-sunglasses" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™ - Ring</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $18
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-womens-ivy" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17877972811940" class="product--wrapper image-wrapper">
+              <div style="padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17877972811940"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/EC9E82DA-7B77-47FA-9A2F-62F2B3F10DE7_small.png?v=1594078685"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/EC9E82DA-7B77-47FA-9A2F-62F2B3F10DE7_{width}x.png?v=1594078685"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™ - Catz"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/EC9E82DA-7B77-47FA-9A2F-62F2B3F10DE7_1024x.png?v=1594078685" alt="Sunized™ - Catz">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-womens-ivy" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™ - Catz</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $27+
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product large--three-twelfths medium--six-twelfths small--six-twelfths" data-product-card>
+  <div class="grid-product__wrapper">
+    
+    
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link image-link" href="/products/sunized%E2%84%A2-mens-handcrafted-bamboo-wide-frame" data-image-link>
+        
+          
+            <div id="ProductImageWrapper-17812184826020" class="product--wrapper image-wrapper">
+              <div style="padding-top:100.0%;">
+                <img class="product--image image lazyload ProductImage-17812184826020"
+                     src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/8246E21F-9BE2-4F13-AA05-7778A660A8EE_small.png?v=1593750040"
+                     data-src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/8246E21F-9BE2-4F13-AA05-7778A660A8EE_{width}x.png?v=1593750040"
+                     data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                     data-aspectratio="1.0"
+                     data-sizes="auto"
+                     alt="Sunized™ - Bamboo Wayfarer"
+                     data-image>
+              </div>
+            </div>
+            <noscript>
+              <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/products/8246E21F-9BE2-4F13-AA05-7778A660A8EE_1024x.png?v=1593750040" alt="Sunized™ - Bamboo Wayfarer">
+            </noscript>
+          
+
+          
+            <div class="tag-wrapper tag-top-left hide-tag-mobile">
+              
+            </div>
+          
+        
+        
+      </a>
+    </div>
+    
+    
+    <a href="/products/sunized%E2%84%A2-mens-handcrafted-bamboo-wide-frame" class="grid-product__meta">
+      
+        
+      
+      	
+      
+        <p class="grid-product__title">Sunized™ - Bamboo Wayfarer</p>
+      	
+      	
+          <div class="review-badge">
+  
+    <!-- INSERT [PRODUCT GRID] REVIEW BADGE HERE -->
+    
+  
+</div>
+        
+      
+        <p class="grid-product__price-wrap">
+          <span class="grid-product__price">
+            
+               <span class="visually-hidden">Regular price</span>
+            
+            
+            <span class="">
+              
+                $23
+              
+            </span>
+          </span></p>
+      
+    </a>
+  </div>
+</div>
+
+
+
+
+  
+            
+          </div>
+          
+          <div class="slick-navigation">
+            <button class="slick-arrows slick-prev">
+              <span class="fas fa-arrow-left"></span>
+            </button>
+            <div class="slick-dots-container"></div>
+            <button class="slick-arrows slick-next">
+              <span class="fas fa-arrow-right"></span>
+            </button>
+          </div>
+                 
+          
+
+        </div>
+    </div>
+  </div>
+
+
+</div><div id="shopify-section-1593657323942" class="shopify-section quotes-section">
+
+
+
+  <div id="section-1593657323942" class="" data-section-id="1593657323942" data-section-type="quotes-section">
+    <div class="box">
+      <div class="wrapper">
+        
+        
+          <div class="grid">
+            <div class="grid__item large--eight-twelfths push--large--two-twelfths">
+              <div class="section-header">
+                
+                  <h2 class="section-header__title">Testimonials</h2>
+                
+                
+              </div>
+             </div>
+          </div>
+        
+        
+        
+          <style>
+            .quote-icon-wrapper{
+              width: 70px;
+              height: 70px;
+            }
+          </style>
+          <div class="quotes-wrapper">
+            <div class="quotes-slider slick-format" id="Quotes-1593657323942"
+                 data-count="9"
+                 data-autoplay="true"
+                 data-autoplayspeed="7000"
+                 data-dots="false"
+                 data-arrows="false">
+              
+              <!-- Blocks -->
+              
+                <div class="quotes-slide--1593657323942-0" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                    
+                      <div class="quote-image-wrapper">
+                        <img class="quote-image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy3_5d9bce8e-e3f0-45ed-bac7-ec4db31fdcf1_70x70_crop_center.png?v=1593657459"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy3_5d9bce8e-e3f0-45ed-bac7-ec4db31fdcf1_70x70_crop_center.png?v=1593657459 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/testy3_5d9bce8e-e3f0-45ed-bac7-ec4db31fdcf1_70x70_crop_center@2x.png?v=1593657459 2x">
+                      </div>
+                    
+                    
+                      <div class="rte"><p>very dark lenses, can't see your eyes - Design is wonderful and fits perfectly, lenses are also very dark which is the main reason I bought them. Very satisfied with these sunglasses!</p></div>
+                    
+                    
+                      <cite>Daniela W.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593657323942-1" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                    
+                      <div class="quote-image-wrapper">
+                        <img class="quote-image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy2_e9274928-cb79-478a-a870-e3d91b053eea_70x70_crop_center.png?v=1593657747"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy2_e9274928-cb79-478a-a870-e3d91b053eea_70x70_crop_center.png?v=1593657747 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/testy2_e9274928-cb79-478a-a870-e3d91b053eea_70x70_crop_center@2x.png?v=1593657747 2x">
+                      </div>
+                    
+                    
+                      <div class="rte"><p>These glasses were very stylish and cool. Wore them at my Family BBQ on a sunny day and it protected my eyes from the sun.</p></div>
+                    
+                    
+                      <cite>Ashly M.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593658843363" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                      <div class="quote-icon-wrapper">
+                        <span class="fas fa-quote-left quote-icon"></span>
+                      </div>
+                    
+                    
+                      <div class="rte"><p>I purchased this glasses and got so many compliments. I lost it the same day . I repurchase it and so happy they were in stock</p></div>
+                    
+                    
+                      <cite>Kera D.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593657323942-2" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                    
+                      <div class="quote-image-wrapper">
+                        <img class="quote-image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-07-03_at_4.43.29_PM_70x70_crop_center.png?v=1593809016"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-07-03_at_4.43.29_PM_70x70_crop_center.png?v=1593809016 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-07-03_at_4.43.29_PM_70x70_crop_center@2x.png?v=1593809016 2x">
+                      </div>
+                    
+                    
+                      <div class="rte"><p>I love this company! The glasses look exactly like the photos and they are good quality for a great price. I had an issue with my order, and their customer service was very prompt with their replies and did everything they could to make the issue right. Highly recommend Sunized!!</p></div>
+                    
+                    
+                      <cite>Sara R.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593657890298" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                    
+                      <div class="quote-image-wrapper">
+                        <img class="quote-image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/examp1_70x70_crop_center.png?v=1593657995"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/examp1_70x70_crop_center.png?v=1593657995 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/examp1_70x70_crop_center@2x.png?v=1593657995 2x">
+                      </div>
+                    
+                    
+                      <div class="rte"><p>I received my order within a week! Thankq</p></div>
+                    
+                    
+                      <cite>Cameron J.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593659024052" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                      <div class="quote-icon-wrapper">
+                        <span class="fas fa-quote-left quote-icon"></span>
+                      </div>
+                    
+                    
+                      <div class="rte"><p>Definitely the coolest pair of glasses I have. Excited to wear them to my next rave</p></div>
+                    
+                    
+                      <cite>Priyankshi P</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593658034754" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                    
+                      <div class="quote-image-wrapper">
+                        <img class="quote-image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy1_6826d817-6ccc-48f0-b16f-0c2344d6d40d_70x70_crop_center.png?v=1593658171"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy1_6826d817-6ccc-48f0-b16f-0c2344d6d40d_70x70_crop_center.png?v=1593658171 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/testy1_6826d817-6ccc-48f0-b16f-0c2344d6d40d_70x70_crop_center@2x.png?v=1593658171 2x">
+                      </div>
+                    
+                    
+                      <div class="rte"><p>I bought a pair for myself and my husband. Im in love with the colors</p></div>
+                    
+                    
+                      <cite>Elisabeth S.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593658393184" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                    
+                      <div class="quote-image-wrapper">
+                        <img class="quote-image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy100_965dae17-451e-49db-a23f-053d7e3d9174_70x70_crop_center.png?v=1593658428"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/testy100_965dae17-451e-49db-a23f-053d7e3d9174_70x70_crop_center.png?v=1593658428 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/testy100_965dae17-451e-49db-a23f-053d7e3d9174_70x70_crop_center@2x.png?v=1593658428 2x">
+                      </div>
+                    
+                    
+                      <div class="rte"><p>Great fit, stay in place, keeps the sun away and look fantastic!!</p></div>
+                    
+                    
+                      <cite>Tamaya B.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+                <div class="quotes-slide--1593658468061" >
+                  <blockquote class="quotes-slider__text text-center">
+                    
+                    
+                      <div class="quote-image-wrapper">
+                        <img class="quote-image" src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-07-03_at_4.42.13_PM_70x70_crop_center.png?v=1593808941"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-07-03_at_4.42.13_PM_70x70_crop_center.png?v=1593808941 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-07-03_at_4.42.13_PM_70x70_crop_center@2x.png?v=1593808941 2x">
+                      </div>
+                    
+                    
+                      <div class="rte"><p>Am so much happy with those sunglasses true to size colour material too. Damn worth it</p></div>
+                    
+                    
+                      <cite>Pooja S.</cite>
+                    
+                  </blockquote>
+                </div>
+              
+            </div>
+            <div class="slick-navigation">
+              <button class="slick-arrows slick-prev">
+                <span class="fas fa-arrow-left"></span>
+              </button>
+              <div class="slick-dots-container"></div>
+              <button class="slick-arrows slick-next">
+                <span class="fas fa-arrow-right"></span>
+              </button>
+            </div>
+          </div>
+        
+          
+        
+
+      </div>
+    </div>
+  </div>
+
+
+</div><div id="shopify-section-1593659100969" class="shopify-section newsletter-section"><div id="section-1593659100969" class="" data-section-id="1593659100969" data-section-type="newsletter-section">
+  <div class="box">
+    <div class="wrapper">
+      
+      
+        <div class="grid">
+          <div class="grid__item large--eight-twelfths push--large--two-twelfths">
+            <div class="section-header">
+              
+                <h2 class="section-header__title">Subscribe to our Newsletter</h2>
+              
+              
+                <p class="section-header__subtitle">Stay in touch with us and feel free to share your experience!</p>
+              
+            </div>
+           </div>
+        </div>
+      
+      
+      <div class="grid">
+        <div class="grid__item large--eight-twelfths push--large--two-twelfths one-whole text-center">
+          <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+  
+  
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <div class="newsletter--form">
+      <div class="input-group">
+        <input id="newsletter-input" type="email" value="" placeholder="Your email" name="contact[email]" id="Email" class="input-group-field newsletter__input" autocorrect="off" autocapitalize="off">
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn--primary newsletter__submit" name="commit" id="Subscribe">
+            
+            <span class="fas fa-envelope"></span>
+            
+          </button>
+        </span>
+      </div>
+    </div>
+  
+</form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</div><!-- END content_for_index -->
+</div>
+
+      </div>
+    </main>
+
+    <div id="shopify-section-guarantee" class="shopify-section guarantee-section">
+
+
+
+  <div id="section-guarantee" class="bg-section" data-section-id="guarantee" data-section-type="guarantee-template">
+    <div class="box">
+      <div class="wrapper">
+        <div class="grid grid-uniform grid--spacer">
+          
+          <!-- Blocks -->
+          
+            <div class="grid__item large--three-twelfths medium--six-twelfths" >
+              <div class="guarantee-item guarantee-title-only">
+                
+                <div class="guarantee-icon">
+                  <span class="fas fa-truck fa-2x"></span>
+                </div>
+                
+                <div class="guarantee-content">
+                  
+                  <h5 class="guarantee-title">Free Worldwide Shipping</h5>
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="grid__item large--three-twelfths medium--six-twelfths" >
+              <div class="guarantee-item guarantee-title-only">
+                
+                <div class="guarantee-icon">
+                  <span class="fas fa-trophy fa-2x"></span>
+                </div>
+                
+                <div class="guarantee-content">
+                  
+                  <h5 class="guarantee-title">Satisfaction Guaranteed</h5>
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="grid__item large--three-twelfths medium--six-twelfths" >
+              <div class="guarantee-item guarantee-title-only">
+                
+                <div class="guarantee-icon">
+                  <span class="fas fa-rocket fa-2x"></span>
+                </div>
+                
+                <div class="guarantee-content">
+                  
+                  <h5 class="guarantee-title">30-Day Money-Back Guarantee</h5>
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="grid__item large--three-twelfths medium--six-twelfths" >
+              <div class="guarantee-item guarantee-title-only">
+                
+                <div class="guarantee-icon">
+                  <span class="fas fa-thumbs-up fa-2x"></span>
+                </div>
+                
+                <div class="guarantee-content">
+                  
+                  <h5 class="guarantee-title">24/7 Customer Service</h5>
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+          
+          
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>  
+
+    <div id="shopify-section-footer" class="shopify-section footer-section">
+
+
+
+
+        
+
+
+
+
+
+<!-- site footer -->
+<footer id="section-footer" role="contentinfo" data-section-id="footer" data-section-type="footer-section">
+
+  
+    <div class="box site-footer">
+      <div class="wrapper">
+        <div class="grid grid-uniform grid--spacer main-footer">
+
+          <!-- Blocks -->
+          
+              <div class="grid__item footer-item footer-text  " >
+                
+
+                
+                    
+                      
+                      <a href="/" class="image-link">
+                        <img class="logo"
+                             src="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x48.png?v=1593545963"
+                             srcset="//cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x48.png?v=1593545963 1x, //cdn.shopify.com/s/files/1/0422/9840/9124/files/Screen_Shot_2020-06-30_at_3.39.02_PM_x48@2x.png?v=1593545963 2x"
+                             alt="sunized"
+                             itemprop="logo">
+                      </a>
+                    
+                    
+                    <div class="site-footer__rte rte">
+                      <p>A pair for every occasion.</p>
+                    </div>
+                    
+                    
+                  
+              </div>
+          
+              <div class="grid__item footer-item footer-text  " >
+                
+                  <h4 class="site-footer__linktitle">Contact Us</h4>
+                
+
+                
+                    
+                    
+                    
+                	<ul class="no-bullets site-footer__linklist ">
+                      
+                        <li>
+                          <a href="mailto:sunizedservice@gmail.com">
+                            <span class="fas fa-at fa-fw" aria-hidden="true"></span>
+                            sunizedservice@gmail.com
+                          </a>
+                        </li>
+                      
+                      
+                        <li>
+                          <a href="tel:9739781123">
+                            <span class="fas fa-phone fa-fw" aria-hidden="true"></span>
+                            973-978-1123
+                          </a>
+                        </li>
+                      
+                    </ul>
+                	
+                  
+              </div>
+          
+              <div class="grid__item footer-item footer-link_list  " >
+                
+                  <h4 class="site-footer__linktitle">Useful Links</h4>
+                
+
+                
+                    <ul class="no-bullets site-footer__linklist ">
+                      
+                        <li><a href="/pages/contact-us">Contact Us</a></li>
+                      
+                        <li><a href="/pages/refund-policy">Refund Policy</a></li>
+                      
+                        <li><a href="/policies/privacy-policy">Privacy Policy</a></li>
+                      
+                        <li><a href="/policies/terms-of-service">Terms of Service</a></li>
+                      
+                        <li><a href="/pages/covid-19">COVID-19 Update</a></li>
+                      
+                    </ul>
+                  
+              </div>
+          
+              <div class="grid__item footer-item footer-social_medias  " >
+                
+                  <h4 class="site-footer__linktitle">Stay Connected</h4>
+                
+
+                
+                    
+                      <ul class="no-bullets social-icons">
+                        
+                          <li>
+                            <a class="" target="_blank" href="https://www.facebook.com/Sunized-104647394646821" title="sunized on Facebook">
+                              <span class="fab fa-facebook-f fa-fw" aria-hidden="true"></span>
+                              Facebook
+                            </a>
+                          </li>
+                        
+                        
+                        
+                        
+                          <li>
+                            <a class="" target="_blank" href="https://www.instagram.com/sunized.shopify" title="sunized on Instagram">
+                              <span class="fab fa-instagram fa-fw" aria-hidden="true"></span>
+                              Instagram
+                            </a>
+                          </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                      </ul>
+                    
+
+                
+              </div>
+          
+
+        </div>
+      </div>
+    </div>
+  
+  
+  <div class="bottom-footer small--text-center medium--text-center">
+    <div class="wrapper">
+      <div class="grid">
+        
+        <div class="grid__item large--one-half">
+          
+          <span class="credentials">
+            <span> All Rights Reserved &copy; 2020 <a href="/" title="">sunized</a></span> <!-- Copyrights-->
+            | <span> <a href="https://www.shopify.com/?ref=debutify" target="_blank" rel="nofollow"></a></span> <!-- powered by stuff change -->
+            | <span> <a href="https://debutify.com" target="_blank"></a></span>
+          </span>
+        </div>
+        
+        <div class="grid__item large--one-half large--text-right">
+          
+            
+  <ul class="inline-list payment-icons-list">
+    
+      <li>
+        <svg class="payment-icons" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"/><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"/><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"/></g></svg>
+
+      </li>
+    
+      <li>
+        <svg class="payment-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z" /><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875" /><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858" /><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048" /></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z" /><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z" /><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z" /></g></g></svg>
+
+      </li>
+    
+      <li>
+        <svg class="payment-icons" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-diners_club"><title id="pi-diners_club">Diners Club</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"/></svg>
+      </li>
+    
+      <li>
+        <svg class="payment-icons" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-discover"><title id="pi-discover">Discover</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"/><path d="M37 16.95V21c0 1.1-.9 2-2 2H23.228c7.896-1.815 12.043-4.601 13.772-6.05z" fill="#EDA024"/><path fill="#494949" d="M9 11h20v2H9z"/><path d="M22 12c0 1.7-1.3 3-3 3s-3-1.4-3-3 1.4-3 3-3c1.7 0 3 1.3 3 3z" fill="#EDA024"/></svg>
+
+      </li>
+    
+      <li>
+        <svg class="payment-icons" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-google_pay"><title id="pi-google_pay">Google Pay</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"/><path d="M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z" fill="#5F6368"/><path d="M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z" fill="#4285F4"/><path d="M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z" fill="#34A853"/><path d="M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z" fill="#FBBC04"/><path d="M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z" fill="#EA4335"/></svg>
+
+      </li>
+    
+      <li>
+        <svg class="payment-icons" width="38" height="24" role="img" aria-labelledby="pi-jcb" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><title id="pi-jcb">JCB</title><g fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"/></g><path d="M11.5 5H15v11.5a2.5 2.5 0 0 1-2.5 2.5H9V7.5A2.5 2.5 0 0 1 11.5 5z" fill="#006EBC"/><path d="M18.5 5H22v11.5a2.5 2.5 0 0 1-2.5 2.5H16V7.5A2.5 2.5 0 0 1 18.5 5z" fill="#F00036"/><path d="M25.5 5H29v11.5a2.5 2.5 0 0 1-2.5 2.5H23V7.5A2.5 2.5 0 0 1 25.5 5z" fill="#2AB419"/><path d="M10.755 14.5c-1.06 0-2.122-.304-2.656-.987l.78-.676c.068 1.133 3.545 1.24 3.545-.19V9.5h1.802v3.147c0 .728-.574 1.322-1.573 1.632-.466.144-1.365.221-1.898.221zm8.116 0c-.674 0-1.388-.107-1.965-.366-.948-.425-1.312-1.206-1.3-2.199.012-1.014.436-1.782 1.468-2.165 1.319-.49 3.343-.261 3.926.27v.972c-.572-.521-1.958-.898-2.919-.46-.494.226-.737.917-.744 1.448-.006.56.245 1.252.744 1.497.953.467 2.39.04 2.919-.441v1.01c-.358.255-1.253.434-2.129.434zm8.679-2.587c.37-.235.582-.567.582-1.005 0-.438-.116-.687-.348-.939-.206-.207-.58-.469-1.238-.469H23v5h3.546c.696 0 1.097-.23 1.315-.415.283-.25.426-.53.426-.96 0-.431-.155-.908-.737-1.212zm-1.906-.281h-1.428v-1.444h1.495c.956 0 .944 1.444-.067 1.444zm.288 2.157h-1.716v-1.513h1.716c.986 0 1.083 1.513 0 1.513z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+      </li>
+    
+      <li>
+        <svg class="payment-icons" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><circle fill="#EB001B" cx="15" cy="12" r="7"/><circle fill="#F79E1B" cx="23" cy="12" r="7"/><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"/></svg>
+      </li>
+    
+      <li>
+        <svg class="payment-icons" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg>
+      </li>
+    
+      <li>
+        <svg class="payment-icons" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-shopify_pay"><title id="pi-shopify_pay">shopify Pay</title><rect x=".5" y=".5" width="37" height="23" rx="2" fill="#5A31F4" stroke="#3F22AB"/><path d="M21.382 9.713c0 1.668-1.177 2.858-2.821 2.858h-1.549a.133.133 0 00-.092.038.128.128 0 00-.038.091v2.192a.129.129 0 01-.08.119.13.13 0 01-.05.01h-1.084a.13.13 0 01-.12-.08.127.127 0 01-.01-.05V6.986a.129.129 0 01.13-.13h2.9c1.637 0 2.814 1.19 2.814 2.858zm-1.352 0c0-.958-.658-1.658-1.55-1.658h-1.468a.13.13 0 00-.13.13v3.05a.129.129 0 00.13.13h1.468c.892.005 1.55-.695 1.55-1.652zM21.704 13.504a1.527 1.527 0 01.647-1.317c.423-.316 1.084-.48 2.055-.514l1.033-.036v-.303c0-.607-.41-.863-1.068-.863-.658 0-1.075.231-1.17.61a.127.127 0 01-.125.09h-1.022a.13.13 0 01-.126-.092.126.126 0 01-.004-.055c.152-.898.904-1.58 2.494-1.58 1.692 0 2.303.783 2.303 2.276v3.172a.13.13 0 01-.132.129h-1.03a.13.13 0 01-.13-.13v-.236a.096.096 0 00-.061-.091.099.099 0 00-.107.022c-.31.334-.808.575-1.607.575-1.175 0-1.95-.607-1.95-1.657zm3.735-.687v-.246l-1.339.07c-.705.036-1.115.326-1.115.816 0 .444.376.69 1.034.69.893 0 1.42-.48 1.42-1.33zM27.755 17.417v-.919a.131.131 0 01.157-.127c.158.029.318.044.479.044a1.229 1.229 0 001.245-.876l.067-.211a.133.133 0 000-.088l-2.145-5.471a.13.13 0 01.122-.18h1.04a.132.132 0 01.123.085l1.456 3.859a.131.131 0 00.125.088.133.133 0 00.125-.088l1.265-3.848a.13.13 0 01.126-.09h1.076a.134.134 0 01.132.116.133.133 0 01-.008.063l-2.295 6.076c-.528 1.413-1.433 1.773-2.43 1.773a1.96 1.96 0 01-.561-.066.132.132 0 01-.1-.14zM8.57 6.4a5.363 5.363 0 00-3.683 1.427.231.231 0 00-.029.31l.618.839a.236.236 0 00.276.084.237.237 0 00.086-.056 3.823 3.823 0 012.738-1.11c2.12 0 3.227 1.584 3.227 3.15 0 1.7-1.163 2.898-2.835 2.921-1.292 0-2.266-.85-2.266-1.974a1.908 1.908 0 01.713-1.48.231.231 0 00.033-.324l-.65-.815a.236.236 0 00-.339-.034c-.399.32-.72.724-.942 1.183a3.39 3.39 0 00-.337 1.47c0 1.935 1.655 3.452 3.775 3.464h.03c2.517-.032 4.337-1.884 4.337-4.415 0-2.247-1.667-4.64-4.752-4.64z" fill="#fff"/></svg>
+      </li>
+    
+      <li>
+        <svg class="payment-icons" viewBox="0 0 38 24" width="38" height="24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-venmo"><title id="pi-venmo">Venmo</title><g fill="none" fill-rule="evenodd"><rect fill-opacity=".07" fill="#000" width="38" height="24" rx="3"/><path fill="#3D95CE" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+
+      </li>
+    
+      <li>
+        <svg class="payment-icons" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"/></svg>
+      </li>
+    
+  </ul>
+
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+</div>
+
+    
+    <div class="overlay-drawer"></div>
+  </div>
+  
+  
+  <script>
+    
+  </script>
+
+  
+  
+    <!-- /snippets/ajax-cart-template.liquid -->
+
+  <script id="CartTemplate" type="text/template">
+  
+    <form action="/cart" method="post" novalidate class="cart ajaxcart cart-spacer">
+      <div class="ajaxcart__inner ajaxcart__inner--has-fixed-footer">
+        {{#items}}
+        <div class="ajaxcart__product">
+          <div class="ajaxcart__row" data-line="{{line}}">
+            <div class="grid--full grid-uniform ajaxcart__grid">
+              <div class="grid__item one-quarter">
+                <a href="{{url}}" class="ajaxcart__product-image"><img src="{{img}}" alt="{{name}}"></a>
+              </div>
+              <div class="grid__item three-quarters ajaxcart__grid-info">
+                <div class="ajaxcart__product-name--wrapper">
+                  <a href="{{url}}" class="ajaxcart__product-name">{{{name}}}</a>
+                  {{#if variation}}
+                    <span class="ajaxcart__product-meta">{{variation}}</span>
+                  {{/if}}
+                  {{#properties}}
+                    {{#each this}}
+                      {{#if this}}
+                        <span class="ajaxcart__product-meta">{{@key}}: {{this}}</span>
+                      {{/if}}
+                    {{/each}}
+                  {{/properties}}
+                </div>
+                <div class="grid--full grid-uniform ajaxcart__quantity-grid{{#if discountsApplied}} ajaxcart__has-discount{{/if}}">
+                  <div class="grid__item ajaxcart__quantity-grid__item">
+                  
+<div class="qty-container">
+
+ 
+  
+  
+  
+  
+  
+  
+  
+    
+    <button type="button" class="btn btn-square-small qty-adjust qty-minus ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="{{key}}" data-qty="{{itemMinus}}" data-line="{{line}}" aria-label="Reduce item quantity by one">
+      <span class="fas fa-minus" aria-hidden="true"></span>
+      <span class="fallback-text" aria-hidden="true">&minus;</span>
+    </button>
+    <input type="number" name="updates[]" class="qty-input ajaxcart__qty-num" value="{{itemQty}}" min="0" data-id="{{key}}" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+    <button type="button" class="btn btn-square-small qty-adjust qty-plus ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}" aria-label="Increase item quantity by one">
+      <span class="fas fa-plus" aria-hidden="true"></span>
+      <span class="fallback-text" aria-hidden="true">+</span>
+    </button>
+    
+  
+  
+  
+
+  
+</div>
+
+                  </div>
+                  <div class="grid__item ajaxcart__price-grid__item text-right">
+                   {{#if discountsApplied}}
+                      <span class="visually-hidden">Regular price</span>
+                      <del class="ajaxcart__price ajaxcart__price--strikethrough price">{{{price}}}</del>
+                      <span class="visually-hidden">Sale price</span>
+                      <span class="ajaxcart__price">{{{discountedPrice}}}</span>
+                    {{else}}
+                      <span class="ajaxcart__price">{{{price}}}</span>
+                    {{/if}}
+                  </div>
